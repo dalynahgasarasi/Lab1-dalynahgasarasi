@@ -78,7 +78,6 @@ print(f"Status: {status}")
 
 
 with open("grades.csv", "w", newline="") as csvfile:
-    # 5b. Header Row
     fieldnames = ["Assignment", "Category", "Grade", "Weight"]
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
@@ -92,3 +91,4 @@ with open("grades.csv", "w", newline="") as csvfile:
         })
 
 print("\ngrades.csv file created successfully!")
+
